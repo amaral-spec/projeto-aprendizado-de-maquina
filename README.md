@@ -17,6 +17,5 @@ Exemplo: Identificamos que clientes com limites de crédito iniciais mais baixos
 
 ## Instruções Básicas para Execução
 1. Certifique-se de ter o Python 3 instalado, junto com as bibliotecas: `pandas`, `matplotlib` e `seaborn`.
-2. Baixe o dataset no link oficial e garanta que o arquivo `.csv` esteja dentro da pasta `data/` com o nome `default_of_credit_card_clients.csv`.
-3. Abra o arquivo `analise_exploratoria.ipynb` em um ambiente Jupyter (Jupyter Notebook, JupyterLab ou VS Code).
-4. Execute as células sequencialmente (ou utilize "Run All").
+2. Abra o arquivo `analise_exploratoria.ipynb` em um ambiente Jupyter (Jupyter Notebook, JupyterLab ou VS Code).
+3. Execute as células sequencialmente (ou utilize "Run All").
