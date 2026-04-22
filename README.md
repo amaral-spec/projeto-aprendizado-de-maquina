@@ -1,21 +1,24 @@
-
-# Análise Exploratória: Inadimplência em Cartões de Crédito
+# Análise de Inadimplência em Cartões de Crédito (Credit Card Default)
 
 ## O Problema Analisado
-Este projeto foca na previsão de inadimplência de clientes de cartão de crédito em Taiwan. O objetivo principal é identificar padrões demográficos e comportamentais que indiquem um alto risco de atraso no pagamento da fatura no mês subsequente, permitindo a tomada de decisões preventivas de crédito.
+A inadimplência de cartões de crédito é um risco constante para instituições financeiras, gerando impactos severos na geração de caixa e sustentabilidade do negócio. Este projeto busca identificar padrões e fatores (demográficos, financeiros e de comportamento de pagamento) associados à propensão de um cliente não pagar sua fatura no mês seguinte, visando subsidiar estratégias preventivas de concessão de crédito.
 
 ## O Dataset Utilizado
-A base de dados foi extraída do UCI Machine Learning Repository: [Default of Credit Card Clients Dataset](https://archive.ics.uci.edu/dataset/350/default+of+credit+card+clients). O dataset conta com 30.000 registros e 24 atributos contendo informações demográficas (idade, sexo, escolaridade, estado civil), histórico de pagamentos (abril a setembro de 2005) e limites de crédito.
+Utilizamos o **Default of Credit Card Clients Dataset**, proveniente de Taiwan em 2005.
+- **Fonte:** [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/default+of+credit+card+clients)
+- **Instâncias:** 30.000 clientes.
+- **Atributos:** 24 variáveis explicativas (como Idade, Escolaridade, Limite, Histórico de pagamentos de 6 meses) e 1 variável alvo (`DEFAULT`).
 
 ## Integrantes do Grupo
-* Gabriel do Amaral de Oliveira
-* Emilly Cabuçu Lopes
+- Gabriel Amaral - CP3025624
+- Emilly Lopes - CP3025781
 
-## Resumo dos Principais Achados da EDA
-*(Você preencherá isso após rodar todo o notebook e ler as conclusões)*
-Exemplo: Identificamos que clientes com limites de crédito iniciais mais baixos tendem a ter uma taxa de inadimplência proporcionalmente maior. Além disso, o atraso no mês imediatamente anterior (PAY_1) demonstrou ser um forte preditor visual para o atraso no mês subsequente.
+## Resumo dos Principais Achados (EDA)
+1. **O histórico importa mais que o perfil:** Variáveis demográficas e limite de crédito mostraram fraca associação com a inadimplência, enquanto o status de pagamento do mês imediatamente anterior (`PAY_0`) foi o preditor mais forte.
+2. **Multicolinearidade:** O valor faturado mês a mês (`BILL_AMT`) apresenta alta correlação cruzada, sugerindo redundância para modelos futuros.
+3. **Escolaridade:** Foi notado um leve aumento proporcional na taxa de inadimplência em pessoas com ensino médio completo e superior completo, comparado àquelas com pós-graduação.
 
-## Instruções Básicas para Execução
-1. Certifique-se de ter o Python 3 instalado, junto com as bibliotecas: `pandas`, `matplotlib` e `seaborn`.
-2. Abra o arquivo `analise_exploratoria.ipynb` em um ambiente Jupyter (Jupyter Notebook, JupyterLab ou VS Code).
-3. Execute as células sequencialmente (ou utilize "Run All").
+## Como executar o notebook
+1. Clone este repositório: `git clone [link do repositorio]`
+2. Certifique-se de ter instalado: Python 3, Pandas, Matplotlib e Seaborn. (Pode ser rodado via Anaconda ou Google Colab).
+3. Abra o arquivo `notebook_analise.ipynb` em seu Jupyter Notebook ou em seu ambiente de preferência e execute as células sequencialmente (`Run All`). A base de dados é baixada diretamente da internet via script, sem necessidade de download manual.
