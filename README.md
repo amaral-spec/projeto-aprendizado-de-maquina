@@ -14,9 +14,10 @@ Utilizamos o **Default of Credit Card Clients Dataset**, proveniente de Taiwan e
 - Emilly Lopes - CP3025781
 
 ## Resumo dos Principais Achados (EDA)
-1. **O histórico importa mais que o perfil:** Variáveis demográficas e limite de crédito mostraram fraca associação com a inadimplência, enquanto o status de pagamento do mês imediatamente anterior (`PAY_0`) foi o preditor mais forte.
-2. **Multicolinearidade:** O valor faturado mês a mês (`BILL_AMT`) apresenta alta correlação cruzada, sugerindo redundância para modelos futuros.
-3. **Escolaridade:** Foi notado um leve aumento proporcional na taxa de inadimplência em pessoas com ensino médio completo e superior completo, comparado àquelas com pós-graduação.
+1. **Histórico da fatura:** A princípio, o melhor fator determinante analisado para a veficação se o cliente é ou não inadimplente.
+2.  **O histórico importa mais que o perfil:** Variáveis demográficas e limite de crédito mostraram fraca associação com a inadimplência, enquanto o status de pagamento do mês imediatamente anterior (`PAY_0`) foi o preditor mais forte.
+3. **Multicolinearidade:** O valor faturado mês a mês (`BILL_AMT`) apresenta alta correlação cruzada, sugerindo redundância para modelos futuros.
+4. **Escolaridade:** Foi notado um leve aumento proporcional na taxa de inadimplência em pessoas com ensino médio completo e superior completo, comparado àquelas com pós-graduação.
 
 ## Como executar o notebook
 1. Clone este repositório: `git clone [link do repositorio]`
